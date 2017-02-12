@@ -1,19 +1,26 @@
 import turtle
 
+
+def drawline(tur):
+    for i in range(0,4):
+        tur.forward(100)
+        tur.right(90)
+
+def draw_sq():
+    brad = turtle.Turtle()
+    drawline(brad)
+
+def draw_circle():
+    c = turtle.Turtle()
+    c.circle(100)
+
 def draw_square():
     
     window = turtle.Screen()
     window.bgcolor('red')
 
-    brad = turtle.Turtle()
-    brad.forward(100)
-    brad.right(90)
-    brad.forward(100)
-    brad.right(90)
-    brad.forward(100)
-    brad.right(90)
-    brad.forward(100)
-    brad.right(90)
+    draw_sq()
+    draw_circle()
 
     window.exitonclick()
 
